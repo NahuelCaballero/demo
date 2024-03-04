@@ -1,14 +1,28 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+    "server_url_apidev":"https://api-dev.creditomillon.com/CleverMiddleware.Gateway/api/v1/CreditoMillon",
+
+    "environment_urls": [
+        {
+            "apidev": "https://api-dev.creditomillon.com/CleverMiddleware.Gateway/api/v1/",
+            "environment_112":"http://10.10.100.112:88/CreditoMillon/Middleware/Gateway/api/v1/",
+            "environment_102":"http://10.10.30.102:81/CreditoMillon.MiddlewareGateway/api/v1/"
+        }
+    ],
+    "endponts": [
+        {
+            "creditomillon": "CreditoMillon",
+            "walletcore":"WalletCore"
+        }
+    ],
+    "routes":[
+        {
+            "auth":"Auth",
+            "business":"Business",
+            "client":"Client",
+            "loan":"Loan",
+            "mercadoPago":"MercadoPago",
+            "payment":"Payment",
+            "user":"User"
+        }
+    ]
 }
